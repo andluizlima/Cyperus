@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.7.0",
+  "iOS" : [
+    {
+      "hash" : "6d9b108285c9ddce5cbc1d96dc52b075dabce728a0ff34bde1d8534cc6ee1995",
+      "name" : "Zip"
+    }
+  ]
+}
