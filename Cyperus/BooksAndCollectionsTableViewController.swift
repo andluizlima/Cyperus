@@ -1,8 +1,8 @@
 //
-//  CategoriesTableViewController.swift
-//  AppLabMobile
+//  BooksAndCollectionsTableViewController.swift
+//  Cyperus
 //
-//  Created by André Luiz Rodrigues on 23/05/17.
+//  Created by André Luiz Rodrigues on 24/05/17.
 //  Copyright © 2017 André Luiz Rodrigues. All rights reserved.
 //
 
@@ -11,36 +11,37 @@ import Google
 import GoogleSignIn
 import GoogleAPIClientForREST
 
-class CategoriesTableViewController: UITableViewController {
-    
-    var drive = GTLRDriveService()
-    
-    let categories: [String] = ["Adventure", "Thriller", "Romance", "Novel", "Comedy", "Biography"].sorted()
-    
+class BooksAndCollectionsTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    
-    
-    
+
+    // MARK: - Table view data source
+
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-    
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! CategoryTableViewCell
-        
-        cell.categoryName.text = categories[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
+
 }

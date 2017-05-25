@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.isIdleTimerDisabled = true
         
         if book.bookTitle != nil {
             bookTitle.text = book.bookTitle

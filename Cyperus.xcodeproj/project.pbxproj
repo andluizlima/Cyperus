@@ -25,6 +25,7 @@
 		EE1A50F81ED6244900BA4BB0 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1A50F31ED623BB00BA4BB0 /* Zip.framework */; };
 		EE1A50F91ED6244900BA4BB0 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1A50F31ED623BB00BA4BB0 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE1A51001ED6298B00BA4BB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE1A50FF1ED6298B00BA4BB0 /* GoogleService-Info.plist */; };
+		EE1A51021ED6329000BA4BB0 /* BooksAndCollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A51011ED6329000BA4BB0 /* BooksAndCollectionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,7 @@
 		EE1A50EF1ED621D400BA4BB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EE1A50F31ED623BB00BA4BB0 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
 		EE1A50FF1ED6298B00BA4BB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE1A51011ED6329000BA4BB0 /* BooksAndCollectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksAndCollectionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				EE1A50DA1ED621B300BA4BB0 /* BookContent.swift */,
 				EE1A50DB1ED621B300BA4BB0 /* BookListTableViewController.swift */,
 				EE1A50DC1ED621B300BA4BB0 /* CategoriesTableViewController.swift */,
+				EE1A51011ED6329000BA4BB0 /* BooksAndCollectionsTableViewController.swift */,
 				EE1A50DD1ED621B300BA4BB0 /* CategoryTableViewCell.swift */,
 				EE1A50DE1ED621B300BA4BB0 /* ChapterSelectionViewController.swift */,
 				EE1A50DF1ED621B300BA4BB0 /* Downloader.swift */,
@@ -273,6 +276,7 @@
 				EE1A50E51ED621B300BA4BB0 /* BookListTableViewController.swift in Sources */,
 				EE1A50E61ED621B300BA4BB0 /* CategoriesTableViewController.swift in Sources */,
 				EE1A50EA1ED621B300BA4BB0 /* FirstSentenceCellTableViewCell.swift in Sources */,
+				EE1A51021ED6329000BA4BB0 /* BooksAndCollectionsTableViewController.swift in Sources */,
 				EE1A50EB1ED621B300BA4BB0 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

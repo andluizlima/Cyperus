@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppLabMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cyperus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvE-aJ-fcG">
-                                <rect key="frame" x="-2" y="334" width="379" height="335"/>
+                                <rect key="frame" x="-2" y="110" width="379" height="559"/>
                                 <connections>
                                     <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3c-re-bWu"/>
                                 </connections>
@@ -149,7 +149,6 @@
                             <constraint firstItem="sHs-Jr-ga2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6mt-tU-5f7"/>
                             <constraint firstItem="2Hx-7z-y9S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6pv-et-7DI"/>
                             <constraint firstItem="gTu-F3-BCZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Nr-S8-bPv"/>
-                            <constraint firstItem="EvE-aJ-fcG" firstAttribute="top" secondItem="gTu-F3-BCZ" secondAttribute="bottom" constant="-58" id="8g2-KF-yVE"/>
                             <constraint firstItem="sHs-Jr-ga2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BFD-4N-gWh"/>
                             <constraint firstItem="buA-0z-cry" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BHG-W9-Ap9"/>
                             <constraint firstItem="c6m-DT-C8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CGe-ZA-ABK"/>
@@ -187,6 +186,7 @@
                             <constraint firstItem="EvE-aJ-fcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-2" id="tmJ-fT-cYl"/>
                             <constraint firstItem="buA-0z-cry" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uxH-Kq-Zk5"/>
                             <constraint firstItem="H34-Hu-lHD" firstAttribute="top" secondItem="E69-8X-k0k" secondAttribute="bottom" constant="8" id="w12-4T-o85"/>
+                            <constraint firstItem="EvE-aJ-fcG" firstAttribute="top" secondItem="ebE-d7-GhW" secondAttribute="bottom" constant="8" id="wbv-OB-j4S"/>
                             <constraint firstItem="H34-Hu-lHD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xp9-g4-yEc"/>
                             <constraint firstItem="buA-0z-cry" firstAttribute="top" secondItem="H34-Hu-lHD" secondAttribute="bottom" constant="8" id="y4O-x2-5a6"/>
                             <constraint firstAttribute="bottom" secondItem="nFK-Dd-G3j" secondAttribute="bottom" constant="-2" id="yF6-wZ-SrL"/>
@@ -218,7 +218,7 @@
         <!--Categories Table View Controller-->
         <scene sceneID="ai0-E1-9Lp">
             <objects>
-                <tableViewController id="zQr-7Y-6O2" customClass="CategoriesTableViewController" customModule="AppLabMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="zQr-7Y-6O2" customClass="CategoriesTableViewController" customModule="Cyperus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="Liq-Rc-Ylx">
                         <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,11 +232,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="80" id="TWl-uc-0Z4" customClass="CategoryTableViewCell" customModule="AppLabMobile" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="80" id="TWl-uc-0Z4" customClass="CategoryTableViewCell" customModule="Cyperus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="79" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TWl-uc-0Z4" id="JOS-b9-zEg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulr-QF-uNY">
@@ -290,7 +290,7 @@
                                 <rect key="frame" x="0.0" y="79" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MN1-D9-IlH" id="tcG-Un-r1x">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCX-7q-UHR">
@@ -313,7 +313,7 @@
                                 <rect key="frame" x="0.0" y="159" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myR-h6-9X8" id="fR0-wI-Yc6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-TR-gsU">
@@ -367,7 +367,7 @@
                                 <rect key="frame" x="0.0" y="79" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CV6-50-UtJ" id="hrx-Cy-fbH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kk-u3-T6W">
@@ -400,7 +400,7 @@
         <!--Chapter Selection View Controller-->
         <scene sceneID="biA-Oc-K73">
             <objects>
-                <viewController id="1jC-oh-N1f" customClass="ChapterSelectionViewController" customModule="AppLabMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1jC-oh-N1f" customClass="ChapterSelectionViewController" customModule="Cyperus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8KD-c3-W5u"/>
                         <viewControllerLayoutGuide type="bottom" id="FeW-Wb-LEm"/>
@@ -614,7 +614,7 @@
         <!--Sentence List Table View Controller-->
         <scene sceneID="pDU-wp-SUm">
             <objects>
-                <tableViewController id="rLS-dl-Zdz" customClass="SentenceListTableViewController" customModule="AppLabMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="rLS-dl-Zdz" customClass="SentenceListTableViewController" customModule="Cyperus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="37B-wT-ZlR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,11 +628,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstSentence" id="3uj-Bo-hnI" customClass="FirstSentenceCellTableViewCell" customModule="AppLabMobile" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstSentence" id="3uj-Bo-hnI" customClass="FirstSentenceCellTableViewCell" customModule="Cyperus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3uj-Bo-hnI" id="IXR-OS-iOJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcM-XJ-8St">
@@ -669,24 +669,24 @@
             </objects>
             <point key="canvasLocation" x="2925.5999999999999" y="1574.6626686656673"/>
         </scene>
-        <!--My Shelf-->
+        <!--Cyperus-->
         <scene sceneID="3iv-ub-fXr">
             <objects>
-                <tableViewController id="siQ-tD-6ax" customClass="BookListTableViewController" customModule="AppLabMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="siQ-tD-6ax" customClass="BookListTableViewController" customModule="Cyperus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="NAC-DE-NIS">
                         <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.32967921861003285" green="0.3329433692893401" blue="0.3329433692893401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92526924610137939" green="0.91904169321060181" blue="0.82151108980178833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="70" id="SGg-5q-vXC" customClass="MainCell" customModule="AppLabMobile" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="70" id="SGg-5q-vXC" customClass="MainCell" customModule="Cyperus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SGg-5q-vXC" id="V9X-Pv-ajU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueBook" translatesAutoresizingMaskIntoConstraints="NO" id="Bew-Bv-2mF">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book" translatesAutoresizingMaskIntoConstraints="NO" id="Bew-Bv-2mF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk9-Q6-LzG">
@@ -733,7 +733,7 @@
                             <outlet property="delegate" destination="siQ-tD-6ax" id="qGN-0l-GPX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Shelf" id="n7w-xz-HmU">
+                    <navigationItem key="navigationItem" title="Cyperus" id="n7w-xz-HmU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gCV-HC-6GY">
                             <connections>
                                 <segue destination="zQr-7Y-6O2" kind="show" id="eeS-hU-71d"/>
@@ -751,7 +751,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bRo-q2-xiy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="11M-qO-TfZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="11M-qO-TfZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -774,12 +774,12 @@
     </scenes>
     <resources>
         <image name="Back" width="615" height="822"/>
-        <image name="BlueBook" width="375" height="70"/>
+        <image name="Book" width="375" height="70"/>
         <image name="Hipster-Glasses-3-icon" width="512" height="512"/>
         <image name="left" width="256" height="256"/>
         <image name="right" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Ah-vy-CYJ"/>
+        <segue reference="WLj-ZI-47r"/>
     </inferredMetricsTieBreakers>
 </document>
