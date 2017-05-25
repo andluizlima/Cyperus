@@ -36,13 +36,14 @@ class ViewController: UIViewController {
     var book: BookContent!
     var words: [String] = []
     var time = 0.15
-    var wordsPerMinute = 400.0
+    var wordsPerMinute: Double!
     
     var chapterParagraphs: [String]!
     var chapterName: String!
     
     var doubleClick = [false, false]
     var buttonAlpha = [0.0, 0.0]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,9 @@ class ViewController: UIViewController {
         if book.bookTitle != nil {
             bookTitle.text = book.bookTitle
         }
-        nextChapterButton.isHidden = true
+        
+        setUserValues()
+        
         currentWord = 0
         currentText = book.chapterSentences[currentParagraph]
         chapter.text = chapterName
@@ -59,7 +62,32 @@ class ViewController: UIViewController {
         chapter.sizeToFit()
         words = book.chapterSentences[currentParagraph].components(separatedBy: " ")
         fontSizeLabel.text = String(Int(fontSizeSlider.value))
-        readingSpeedSlider.value = 400
+        
+        initBooleans()
+        right.sizeToFit()
+        left.sizeToFit()
+    }
+    
+    func setUserValues(){
+        if let speed = UserDefaults.standard.object(forKey: "readingSpeed") as? Float {
+            readingSpeedSlider.value = speed
+            wordsPerMinute = Double(speed)
+        } else {
+            readingSpeedSlider.value = Float(400)
+            wordsPerMinute = 400.0
+        }
+        
+        if let size = UserDefaults.standard.object(forKey: "fontSize") as? Float {
+            fontSizeSlider.value = size
+            displayWord.font = displayWord.font.withSize(CGFloat(Float(Int(fontSizeSlider.value))))
+        } else {
+            fontSizeSlider.value = Float(38)
+            displayWord.font = displayWord.font.withSize(CGFloat(Float(38)))
+        }
+    }
+    
+    func initBooleans(){
+        nextChapterButton.isHidden = true
         readingSpeedSlider.isHidden = true
         readingSpeedLabel.isHidden = true
         confirmOptionsButton.isHidden = true
@@ -67,8 +95,6 @@ class ViewController: UIViewController {
         fontSizeSlider.isHidden = true
         fontSizeLabel.isHidden = true
         fontSizeTextLabel.isHidden = true
-        right.sizeToFit()
-        left.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
@@ -144,6 +170,8 @@ class ViewController: UIViewController {
     
     @IBAction func confirmOptions(_ sender: Any) {
         wordsPerMinute = Double(readingSpeedSlider.value)
+        UserDefaults.standard.set(readingSpeedSlider.value, forKey: "readingSpeed")
+        UserDefaults.standard.set(fontSizeSlider.value, forKey: "fontSize")
         changeValueForBooleans()
     }
     
@@ -189,8 +217,6 @@ class ViewController: UIViewController {
     
     @IBAction func buttonClick(_ sender: Any) {
         let button = sender as! UIButton
-        print(currentWord)
-        print(currentParagraph)
         ableToRead = false
         
         
